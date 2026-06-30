@@ -1,4 +1,7 @@
 console.log("This is loaded from external js");
-console.log("Name: Tyler Bennett")
-console.log("School: CMVS")
-console.log("Hobbies: Video Games")
+var name = "Tyler Bennett";
+var school = "CMVS";
+var hobby = "Video Games";
+console.log(`Name: ${name}`);
+console.log(`School: ${school}`);
+console.log(`Hobbies: ${hobby}`);
