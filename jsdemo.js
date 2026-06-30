@@ -5,3 +5,6 @@ var hobby = "Video Games";
 console.log(`Name: ${name}`);
 console.log(`School: ${school}`);
 console.log(`Hobbies: ${hobby}`);
+document.getElementById("name").innerHTML = "<b>Name: </b>"+name;
+document.getElementById("school").innerHTML = "<b>School: </b>"+school;
+document.getElementById("hobby").innerHTML = "<b>Hobby: </b>"+hobby;
