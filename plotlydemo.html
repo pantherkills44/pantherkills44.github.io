@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>
-      Tyler's Website
+      Plotly demo
     </title>
      <style>
  <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
@@ -13,9 +13,21 @@
   <body>
     <hr>
     <center>
+      <h1>My First Plotly Chart</h1>
+      <div id="plot"></div>
       <p><a href="index.html">Return to the homepage</a></p> 
       <hr>
       <p> &copy; STEM Prep 2026 </p>
     </center>
+    <script>
+      var trace ={
+        x: [1,2,3,4,5]
+        y: [5, 10, 15, 20, 25]
+        mode: "lines"
+      };
+      var data=[trace];
+      var layout = {title: "My First Plot"}
+      Plotly.newPlot("plot", data, layout)
+    </script>
   </body>
 </html>
