@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>
+      Music Chart
+    </title>
+     <style>
+      body{
+        background-color:#3107ba;
+      }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <hr>
+    <center>
+      <h1>My favorite songs</h1>
+      <div id ="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NPqDIwWMtxg?si=u6wkyd3AsO2xs6Zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NLZRYQMLDW4?si=qP2rOt8Mn8POC5K_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9-XbXBq8cl8?si=89ZrlLlvpb6Wvv24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wytB46JIN54?si=zZFo2uPXhXCsR6ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/71JKqtRO9qQ?si=WjMbwcY3d77X3fhR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return to the homepage</a></p> 
+      <hr>
+      <p> &copy; STEM Prep 2026 </p>
+    </center>
+    <script>
+      var songs = ["Euphoria", "DNA", "Sing About Me, I'm Dying of Thirst"]
+        var views=[89325593, 284332080, 30591893, 163991, 161140]
+        var trace= {
+          x: songs,
+          y: views,
+          type: "bar"
+        }:
+        var data=[trace]
+        var layout={title:"My Favorite Songs"}
+        Plotly.newPlot("plot", data, layout)
+    </script>
+  </body>
+</html>
