@@ -5,16 +5,24 @@
     </title>
      <style>
       body{
-        background-color:#3107ba;
+        padding: 0,
+          margin: 0
       }
+       body, #map, html{
+         height: 100%,
+           width: 100%
+       }
     </style>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
   </head>
   <body>
-    <hr>
-    <center>
-      <p><a href="index.html">Return to the homepage</a></p> 
-      <hr>
-      <p> &copy; STEM Prep 2026 </p>
-    </center>
+    <div id="map"></div>
+    <script src="basicmap.js"></script>
   </body>
 </html>
