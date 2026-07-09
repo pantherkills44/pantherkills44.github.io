@@ -2,10 +2,11 @@
 var coordinates = [36.2048, 138.2529]
 var map = L.map('map').setView(coordinates, 13);
 var place1 = [35.6594, 139.7006]
-var place2 = [35.6762, 139.6503]
+var place2 = [35.3606, 138.7274]
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var marker = L.marker(coordinates).bindPopup("<p>Hello, from Japan!!!</p>").addTo(map);
-var marker1 = L.circle(place1,{color: "black", fillColor: "#3b4040", radius: 80}).addTo(map);
+var marker1 = L.circle(place1,{color: "black", fillColor: "#3b4040", radius: 80}).bindPopup("<p> Hello From Shibuya!</p>").addTo(map);
+var marker2 = L.circle(place2,{color: "black", fillColor: "#3b4040", radius: 80}).bindPopup("<p> Hello From Mount Fuji!</p>").addTo(map);
